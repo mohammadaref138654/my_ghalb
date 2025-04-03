@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه وب من</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>سلام! من [محمد عارف] هستم</h1>
+    </header>
+
+    <section>
+        <h2>درباره من</h2>
+        <p>سلام به سایت من خوش امدید من محمد عارفم و در حال یادگیری مهارت های محتلف هستم  خوش حال میشم که با شما این راه رو ادامه بدم</p>
+    </section>
+
+    <section>
+        <h2>مهارت‌ها</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript (در حال یادگیری)</li>
+        </ul>
+    </section>
+
+    
+        
+    
+    <script src="script.js"></script>
+    <section class="animated-bg">
+      
+    </section>
+</body>
+</html>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
+<header>
+    <div class="logo">وب‌سایت من</div>
+    <nav>
+        <ul>
+            <li><a href="#about">درباره من</a></li>
+            <li><a href="#skills">مهارت‌ها</a></li>
+            <li><a href="#contact">تماس با من</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="about">
+    <h2>درباره من</h2>
+
+    <img src=".jpg" alt="Your Image" class="profile-img">
+    <p>من علاقه‌مند به طراحی سایت هستم و به زودی قالب های خلاقانه ای  رو در سایت قرار میدم.خوش حال میشم که سایت مارو فراموش نکنید و مارو در شبکه های اجتماعی دنبال کنید ..</p>
+</section>و
+<a href="#contact" class="btn">تماس با من</a>
+<section id="contact">
+    <h2>تماس با من</h2>
+    <p>برای ارتباط با من می‌توانید از روش‌های زیر استفاده کنید:</p>
+    
+    <div class="contact-info"> 
+        <p><strong>شماره تلفن:</strong> +98 912 345 6789</p>
+        <p><strong>ایمیل:</strong> arfslhshwry22 @gmile.com</p>
+        <p><strong>آدرس:</strong> خیابان آزادی، تهران، ایران</p>
+    </div>
+
+    <a href="mailto:example@example.com" class="btn">ارسال ایمیل</a>
+</section>
+<section id="skills">
+    <h2>مهارت‌ها</h2>
+
+    <div class="skill">
+        <p><strong>طراحی سایت</strong></p>
+        <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+        </div>
+        <p class="percentage">80%</p>
+    </div>
+
+    <div class="skill">
+        <p><strong>برنامه نویسی</strong></p>
+        <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+        </div>
+        <p class="percentage">60%</p>
+    </div>
+
+    <div class="skill">
+        <p><strong>طراحی لباس</strong></p>
+        <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p class="percentage">75%</p>
+    </div>
+
+    <!-- می‌توانید مهارت‌های دیگری را هم اضافه کنید -->
+</section>
+<button class="btn-modern">کلیک کن</button>
+<button onclick="toggleDarkMode()">حالت تاریک</button>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حالت تاریک</title>
+    <style>
+        /* استایل حالت عادی */
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* استایل حالت تاریک */
+        .dark-mode {
+            background-color: #222;
+            color: white;
+        }
+
+        /* استایل دکمه */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1></h1>
+    <button onclick="toggleDarkMode()">تغییر به حالت تاریک</button>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>
+<button class="dark-mode-btn" onclick="toggleDarkMode()">🌓 حالت تاریک</button>
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="products.html" class="nav-link">🛍 مشاهده محصولات</a>
+    </nav>
+
+    <button class="dark-mode-btn" onclick="toggleDarkMode()">🌓 حالت تاریک</button>
+
+    <h1></h1>
+    <p></p>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+<div class="top-left-buttons">
+    <a href="products.html" class="btn">🛍 مشاهده محصولات</a>
+</div>
+<nav class="navbar">
+    <div class="nav-left">
+        <a href="products.html" class="nav-link">🛍 مشاهده محصولات</a>
+    </div>
+    <div class="nav-right">
+        <a href="about.html" class="nav-link">ℹ️ درباره من</a>
+        <a href="skills.html" class="nav-link">💡 مهارت‌ها</a>
+        <a href="contact.html" class="nav-link">📞 تماس با من</a>
+    </div>
+</nav>
+<nav class="navbar">
+    <div class="nav-left">
+        <button class="dark-mode-btn" onclick="toggleDarkMode()">🌓 حالت تاریک</button>
+        <a href="products.html" class="nav-link">🛍 مشاهده محصولات</a>
+    </div>
+    <div class="nav-right">
+        <a href="about.html" class="nav-link">ℹ️ درباره من</a>
+        <a href="skills.html" class="nav-link">💡 مهارت‌ها</a>
+        <a href="contact.html" class="nav-link">📞 تماس با من</a>
+    </div>
+</nav>

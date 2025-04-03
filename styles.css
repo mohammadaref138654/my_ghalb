@@ -1,0 +1,605 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(34, 222, 203);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(189, 184, 184, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #819598;
+    color: rgb(33, 30, 30);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 2s ease-in-out;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4CAF50, #2E8B57); /* گرادیانت رنگ */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه برای هدر */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease; /* انیمیشن برای تغییر رنگ */
+}
+
+nav a:hover {
+    color: #FFD700; /* رنگ طلایی هنگام هاور */
+    text-decoration: underline;
+}
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 4px solid #4CAF50; /* حاشیه سبز */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه برای تصویر */
+    transition: transform 0.3s ease; /* انیمیشن برای بزرگ‌نمایی */
+}
+
+.profile-img:hover {
+    transform: scale(1.1); /* بزرگ شدن تصویر هنگام هاور */
+}
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px; /* دکمه گرد */
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.3s ease; /* انیمیشن برای تغییرات */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* سایه برای دکمه */
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5px); /* جابجایی دکمه به بالا هنگام هاور */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* سایه بزرگ‌تر */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1); /* سایه بالا برای فوتر */
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+#contact {
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#contact h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+#contact .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+#contact .btn:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+#skills {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 10px 0 0 10px; /* گوشه‌های گرد */
+    transition: width 0.5s ease;
+}
+
+.percentage {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    margin-top: 5px;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-in-out;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.btn-modern {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 25px;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-modern:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+@keyframes backgroundMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+}
+.animated-bg {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    background-size: 200% 200%;
+    animation: backgroundMove 10s infinite alternate;
+}
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark-mode-btn {
+    position: fixed; /* دکمه را در جای ثابت نگه می‌دارد */
+    top: -10px; /* فاصله از بالا */
+    left: 200px; /* فاصله از چپ */
+    background: linear-gradient(45deg, #10a6cc, #45da0a); /* گرادینت رنگی */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    z-index: 1000; /* روی همه چیز باشه */
+}
+
+.dark-mode-btn:hover {
+    transform: scale(1.1); /* وقتی موس روی دکمه میره کمی بزرگ بشه */
+    background: linear-gradient(45deg, #31aee3, #23de4b);
+}
+.dark-mode {
+    background: radial-gradient(circle at top left, #222, #111); /* پس‌زمینه گرادینتی تاریک */
+    color: #f1f1f1;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* افکت نرم برای تغییر رنگ متن لینک‌ها در حالت تاریک */
+.dark-mode a {
+    color: #000302;
+}
+
+/* وقتی وارد حالت تاریک می‌شه، دکمه تغییر رنگ بده */
+.dark-mode .dark-mode-btn {
+    background: linear-gradient(45deg, #333, #555);
+    color: #2cc881;
+}
+.top-buttons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px; /* فاصله بین دکمه‌ها */
+}
+
+.dark-mode-btn, .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.dark-mode-btn {
+    background: linear-gradient(45deg, #333, #555);
+    color: white;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.top-left-buttons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+.top-left-buttons {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.btn {
+    background: linear-gradient(45deg, #ff8c00, #ff0080);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    background: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* دکمه‌ها در دو طرف قرار بگیرند */
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    background: #ff8c00;
+}
+/* نوار منو مدرن */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99%;
+    background: linear-gradient(45deg, #1a1a2e, #16213e);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 0 0 10px 10px;
+}
+
+/* استایل دکمه‌های چپ (حالت تاریک و مشاهده محصولات) */
+.nav-left {
+    display: flex;
+    gap: px;
+    .nav-left {
+        display: flex;
+        gap: 100px; /* فاصله بین دکمه‌ها */
+    }
+}
+
+/* استایل دکمه‌های راست (منو) */
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* استایل دکمه‌های منو */
+.nav-link, .dark-mode-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+/* استایل دکمه‌های منو هنگام هاور */
+.nav-link:hover, .dark-mode-btn:hover {
+    background: rgba(37, 231, 124, 0.8);
+    transform: scale(1.1);
+}
+
+/* استایل دکمه حالت تاریک */
+.dark-mode-btn {
+    background: linear-gradient(45deg, #555, #222);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* استایل ریسپانسیو */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+/* استایل دکمه بازگشت به خانه */
+.home-btn {
+    display: inline-block;
+    background: #e67600;
+    background: 
+    color: white;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.home-btn:hover {
+    background: #e67600;
+    background: 
+}
+
+/* استایل بخش محصولات */
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* استایل کارت محصول */
+.product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    padding-bottom: 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* استایل عکس محصول */
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* استایل عنوان و توضیحات */
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    color: gray;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+/* استایل دکمه‌های محصولات */
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* استایل دکمه مشاهده جزئیات */
+.details-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.details-btn:hover {
+    background: #0056b3;
+}
+
+/* استایل دکمه خرید */
+.buy-btn {
+    background: #ff8c00;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background: #e67600;
+}
+
+/* حالت تاریک */
+.dark-mode .product-card {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .home-btn {
+    background: #d32f2f;
+}
+
+.dark-mode .details-btn {
+    background: #1e88e5;
+}
+
+.dark-mode .buy-btn {
+    background: #ff9800;
+}
